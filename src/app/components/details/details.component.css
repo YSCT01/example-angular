@@ -1,0 +1,81 @@
+h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 80px;
+    font-size: 55px;
+    padding: 5px;
+    border-bottom: 1px solid red;
+}
+
+#d_image {
+    float: left;
+    justify-content: center;
+    width: 45%;
+    height: auto;
+    padding-left: 5%;
+    margin-bottom: 30px;
+}
+
+#d_image img {
+    width: 90%;
+}
+
+#d_text {
+    font-size: 18px;
+    float: right;
+    height: auto;
+    width: 45%;
+    margin-bottom: 30px;
+}
+
+#d_text h2 {
+    margin-bottom: 15px;
+}
+
+#d_text p {
+    margin-bottom: 5px;
+}
+
+
+/*-------------------------------------------------------*/
+
+#d_button {
+    float: right;
+    width: 50%;
+    height: 70px;
+    justify-content: center;
+}
+
+#d_button a {
+    display: block;
+    width: 20%;
+    height: 28px;
+    margin-bottom: 50px;
+    text-decoration: none;
+    border-radius: 3px;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 7px;
+    transition: 400ms;
+    cursor: pointer;
+}
+
+.button-e {
+    background-color: blue;
+    float: left;
+    margin-top: 5px;
+    margin-left: 100px;
+}
+
+.button-d {
+    background-color: red;
+    margin-top: 5px;
+    float: right;
+    margin-right: 100px;
+}
+
+#d_button a:hover {
+    background-color: white;
+    color: black;
+}

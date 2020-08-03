@@ -1,0 +1,19 @@
+<h1 *ngIf="project">{{project.name}}</h1>
+
+<div id="d_image" *ngIf="project">
+    <img src="{{url+'/get-image/'+project.image}}">
+</div>
+
+<div id="d_text" *ngIf="project">
+    <h2>{{project.description}}</h2>
+    <p>{{project.category}}</p>
+    <p>{{project.technology}}</p>
+</div>
+<div class="clearfix"></div>
+
+<div id="d_button" *ngIf="project">
+    <a (click)="editButton()" class="button-e">Edit Project</a>
+    <a (click)="deleteProject(project._id)" class="button-d">Delete Project</a>
+</div>
+
+<div class="clearfix"></div>

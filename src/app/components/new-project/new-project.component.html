@@ -1,0 +1,43 @@
+<div id="header" *ngIf="project">
+    <h2>{{title}}</h2>
+    <p>{{date.toDateString()}}</p>
+</div>
+
+<div id="formContainer" *ngIf="project">
+    <form #projectForm="ngForm" (ngSubmit)="onSubmit(projectForm)">
+        <span class="invalidForm" *ngIf="name.touched && !name.valid">Obligatory Field</span>
+        <label for="name">Name of the project:</label>
+        <input type="text" name="name" #name="ngModel" [(ngModel)]="project.name" required>
+        <br>
+        <span class="invalidForm" *ngIf="description.touched && !description.valid">Obligatory Field</span>
+        <label for="description">Description of the project:</label>
+        <textarea name="description" #description="ngModel" [(ngModel)]="project.description" required></textarea>
+        <br>
+        <span class="invalidForm" *ngIf="category.touched && !category.valid">Obligatory Field</span>
+        <label for="category">Category of the project:</label>
+        <input type="text" name="category" #category="ngModel" [(ngModel)]="project.category" required>
+        <br>
+        <span class="invalidForm" *ngIf="technology.touched && !technology.valid">Obligatory Field</span>
+        <label for="technology">Technologies of the project</label>
+        <input type="text" name="technology" #technology="ngModel" [(ngModel)]="project.technology" required>
+        <br>
+        <span class="invalidForm" *ngIf="year.touched && !year.valid">Obligatory Field</span>
+        <label for="number">Year of the project:</label>
+        <input type="number" name="year" #year="ngModel" [(ngModel)]="project.year" required>
+        <br>
+        <label for="image">Upload an image of the project:</label>
+        <input type="file" name="image" placeHolder="Upload Image" #image="ngModel" [(ngModel)]="project.image" (change)="fileChangeEvent($event)">
+        <br>
+        <input type="submit" value="Submit" [disabled]="!projectForm.form.valid">
+    </form>
+</div>
+
+<div id="statusMessage">
+    <p *ngIf="dstatus == 'success'">
+        The project has been saved. Click
+        <a [routerLink]="['/Projects/Project', savedId]"> here to go </a> and see the project.
+    </p>
+    <p *ngIf="dstatus == 'fail'">
+        An error ocurred, please, try again.
+    </p>
+</div>

@@ -1,0 +1,70 @@
+h2 {
+    font-size: 45px;
+    text-align: center;
+    border-bottom: solid 1px red;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+}
+
+#projects {
+    width: 90%;
+    margin: 0px auto;
+    margin-left: 10%;
+}
+
+#projects ul li {
+    margin-bottom: 25px;
+}
+
+#projects ul li a h3 {
+    font-size: 25px;
+    color: rgb(90, 153, 221);
+    margin-bottom: 10px;
+}
+
+#projects ul li a p {
+    margin-right: 25px;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 15px;
+    color: white;
+}
+
+.project {
+    display: block;
+    float: left;
+    list-style: none;
+    width: 20%;
+    background-color: rgba(104, 104, 104, 0.555);
+    margin-right: 25px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    border-radius: 5px;
+    transition: 400ms;
+}
+
+.project:hover {
+    background-color: rgba(47, 68, 126, 0.955);
+    ;
+    transform: scale(1.1, 1.1);
+}
+
+.project a {
+    text-decoration: none;
+}
+
+.project h3 {
+    padding-left: 15px;
+}
+
+.project .image {
+    width: 90%;
+    height: 150px;
+    overflow: hidden;
+    margin-bottom: 2px;
+}
+
+.project img {
+    width: 200px;
+    padding: 15px;
+}

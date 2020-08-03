@@ -1,0 +1,73 @@
+@font-face {
+    font-family: "Anton";
+    src: url("../../../assets/fonts/Anton.ttf");
+}
+
+@font-face {
+    font-family: "Bitter";
+    src: url("../../../assets/fonts/Bitter.ttf");
+}
+
+@font-face {
+    font-family: "Josefin";
+    src: url("../../../assets/fonts/Josefin.ttf");
+}
+
+
+/*--------------------------------------------------------*/
+
+
+/*About Me*/
+
+#title {
+    width: 80%;
+    margin: 0px auto;
+    text-align: center;
+    margin-bottom: 80px;
+    margin-top: 20px;
+}
+
+#title h1 {
+    font-family: "Josefin";
+    font-size: 50px;
+    border-bottom: 1px solid rgb(255, 0, 0);
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+#title h2 {
+    font-family: "Bitter";
+    font-size: 30px;
+    color: rgb(143, 172, 202);
+    margin-bottom: 5px;
+}
+
+#title p {
+    font-size: 20px;
+}
+
+
+/*--------------------------------------------------------*/
+
+
+/* Article */
+
+article.about {
+    width: 80%;
+    margin: 0px auto;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.about h2 {
+    color: rgb(143, 172, 202);
+    font-size: 25px;
+    border-bottom: 1px solid red;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.about p {
+    text-align: justify;
+    padding-bottom: 40px;
+}

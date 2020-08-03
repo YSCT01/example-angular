@@ -1,0 +1,49 @@
+h2 {
+    font-family: "Lato";
+    font-size: 45px;
+    text-align: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid red;
+    margin-bottom: 25px;
+}
+
+#welcome {
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+
+#welcome h3 {
+    font-size: 25px;
+    color: rgb(143, 172, 202);
+    margin-bottom: 5px;
+}
+
+#welcome p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#speak {
+    float: left;
+    width: 40%;
+    margin-left: 10%;
+}
+
+#speak h4 {
+    color: red;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#development {
+    margin-top: 15px;
+    float: right;
+    width: 40%;
+    margin: 0px auto;
+}
+
+#development h4 {
+    color: red;
+    font-size: 20px;
+    margin-bottom: 10px;
+}

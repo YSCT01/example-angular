@@ -1,0 +1,125 @@
+#header {
+    padding: 25px;
+}
+
+#header h2 {
+    font-size: 45px;
+    text-align: center;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid red;
+}
+
+#header p {
+    font-family: Arial;
+    font-size: 15;
+    color: rgb(190, 190, 190);
+    text-align: center;
+}
+
+
+/*---------------------------------------------------------*/
+
+
+/*Form*/
+
+#formContainer {
+    display: inline-block;
+    padding: 25px;
+    width: 45%;
+}
+
+#formContainer form {
+    width: 100%;
+}
+
+#formContainer label {
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    color: rgb(143, 172, 202);
+    margin-bottom: 8px;
+    margin-bottom: 10px;
+}
+
+#formContainer form input {
+    width: 100%;
+    height: 18px;
+    margin-bottom: 12px;
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 1.5px;
+}
+
+#formContainer form textarea {
+    width: 100%;
+    height: 100px;
+    resize: none;
+    font-family: Arial;
+    font-size: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    padding: 1.5px;
+}
+
+#formContainer form input[type="file"] {
+    height: 25px;
+    border-radius: 8px;
+    transition: 300ms;
+}
+
+#formContainer form input[type="file"]:hover {
+    background-color: rgb(255, 0, 0);
+    color: white;
+}
+
+#formContainer form input[type="submit"] {
+    display: block;
+    border-style: none;
+    font-size: 18;
+    color: white;
+    width: 80px;
+    height: 28px;
+    padding: 3px;
+    text-align: center;
+    margin: 0px auto;
+    margin-top: 10px;
+    border-radius: 15px;
+    background-color: rgb(255, 0, 0);
+    transition: 300ms;
+}
+
+#formContainer form input[type="submit"]:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+#formContainer input[type="submit"][disabled] {
+    opacity: 0.2;
+    cursor: not-allowed;
+}
+
+#formContainer form span.invalidForm {
+    color: rgb(211, 71, 71);
+}
+
+
+/*---------------------------------------------------------*/
+
+#statusMessage {
+    width: 40%;
+    float: right;
+    padding: 25px;
+}
+
+#statusMessage p {
+    margin-top: 45%;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+
+#statusMessage a {
+    color: red;
+    text-decoration: none;
+}
