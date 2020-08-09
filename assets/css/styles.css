@@ -1,0 +1,127 @@
+/* Importar fuentes */
+
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/Lato.ttf");
+}
+
+@font-face {
+    font-family: "Red-Rose";
+    src: url("../fonts/RedRose.ttf");
+}
+
+
+/*------------------------------------------------------*/
+
+
+/* Estilo General */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Lato";
+    /*background-image: url("../images/white.jpg");*/
+    background-color: rgb(189, 189, 189);
+    background-size: 1400px;
+    background-position: fixed;
+    color: #333;
+}
+
+.clearfix {
+    float: none;
+    clear: both;
+}
+
+
+/*-------------------------------------------------------*/
+
+
+/* Cabecera */
+
+header {
+    display: block;
+    width: 100%;
+    height: 80px;
+    background-color: rgba(47, 68, 126, 0.955);
+    color: whitesmoke;
+    position: fixed;
+    text-transform: uppercase;
+}
+
+header ul {
+    display: block;
+    width: 80%;
+    height: 80px;
+    margin: 0px auto;
+    align-items: center;
+}
+
+header ul li {
+    display: inline-block;
+    width: 19%;
+    height: 100%;
+    margin: 0px auto;
+    text-align: center;
+    line-height: 70px;
+}
+
+header ul li a {
+    display: block;
+    font-size: 22px;
+    height: 100%;
+    padding-right: 25px;
+    padding-left: 25px;
+    text-decoration: none;
+    color: white;
+    transition: 400ms;
+}
+
+header a:hover,
+.activeLink {
+    background-color: white;
+    color: #333;
+    cursor: pointer;
+}
+
+header #logo {
+    font-family: "Red-Rose";
+}
+
+header #logo:hover {
+    background-color: transparent;
+    color: black;
+    transform: scale(2.0, 2.0);
+}
+
+
+/*------------------------------------------------*/
+
+
+/* Contenedor */
+
+#content {
+    min-height: 550px;
+    height: auto;
+    width: 90%;
+    margin: 0px auto;
+    padding-top: 100px;
+    background-color: rgb(37, 37, 37);
+    color: whitesmoke;
+    box-shadow: 0px 0px 20px black;
+}
+
+
+/*-----------------------------------------------------*/
+
+
+/* Pie de Página */
+
+footer {
+    text-align: center;
+    width: 85%;
+    margin: 0px auto;
+    padding-top: 20px;
+}
