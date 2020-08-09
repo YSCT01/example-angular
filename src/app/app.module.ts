@@ -14,6 +14,7 @@ import { Error404Component } from './components/error404/error404.component';
 import { HomeComponent } from './components/home/home.component';
 import { DetailsComponent } from './components/details/details.component';
 import { EditComponent } from './components/edit/edit.component';
+import { DirectiveExampleDirective } from './directive-example.directive';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { EditComponent } from './components/edit/edit.component';
     Error404Component,
     HomeComponent,
     DetailsComponent,
-    EditComponent
+    EditComponent,
+    DirectiveExampleDirective
   ],
   imports: [
     BrowserModule,
